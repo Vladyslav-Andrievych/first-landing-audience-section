@@ -1,0 +1,17 @@
+@import 'breakpoints.scss';
+@import 'common.scss';
+@import 'audience.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.page {
+  max-width: 1400px;
+  margin: auto;
+}

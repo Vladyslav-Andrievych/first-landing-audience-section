@@ -1,0 +1,36 @@
+@include for-large-up {
+  .hidden_desktop {
+    display: none !important;
+  }
+}
+
+@include for-large-down {
+  .hidden_mobile {
+    display: none !important;
+  }
+}
+
+.action-button {
+  background-color: #3040c4;
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  border-radius: 2px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  cursor: pointer;
+
+  @include for-large-up {
+    width: 160px;
+  }
+}
+
+.fixed-width-action-button {
+  width: 160px;
+}
+
+.bold-text {
+  font-weight: 700;
+}

@@ -1,0 +1,139 @@
+.audience {
+  background-color: #00a1c612;
+  padding: 50px 15px;
+  color: #2b292d;
+
+  @include for-large-up {
+    padding: 108px 131px 110px 130px;
+  }
+
+  &__text {
+    @include for-large-up {
+      max-width: 555px;
+      margin: auto;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    margin: 0;
+    margin-top: 17px;
+
+    @include for-large-up {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      margin-top: 24px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0;
+    margin-top: 18px;
+
+    @include for-large-up {
+      margin-top: 30px;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+
+    @include for-large-up {
+      display: flex;
+      max-width: 328px;
+      margin: auto;
+      margin-top: 34px;
+    }
+
+    .learn-more-button {
+      margin-top: 12px;
+
+      @include for-large-up {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__categories {
+    margin-top: 40px;
+
+    @include for-large-up {
+      display: flex;
+      max-width: 1139px;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 111px;
+    }
+  }
+
+  &__categories-item {
+    margin-top: 15px;
+
+    @include for-large-up {
+      margin-left: 30px;
+      margin-top: 0;
+      flex-grow: 1;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.audience-category {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background-blend-mode: overlay, normal;
+  cursor: pointer;
+
+  @include for-large-up {
+    max-width: 262px;
+  }
+
+  &__content {
+    margin: 0;
+  }
+
+  &__image {
+    display: block;
+    margin: auto;
+    padding-top: 22px;
+    max-width: 100%;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 22px;
+    padding-bottom: 33px;
+  }
+
+  &:hover {
+    background-color: #3141c5;
+
+    .audience-category__name {
+      color: #fff;
+    }
+  }
+}
